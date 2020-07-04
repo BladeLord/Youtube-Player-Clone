@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+    margin: 5px 10px;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Top Navigation */
+
+.nav .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "leftnav midnav rightnav";
+}
+
+#leftnav {
+    grid-area: leftnav;
+}
+#midnav {
+    grid-area: midnav;
+    display: flex;
+    justify-content: center;
+}
+#rightnav {
+    grid-area: rightnav;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 2rem;
+}
+
+
+/* Main Content */
+
+.content {
+    background-color: rgb(248, 242, 242);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+
+
+/* Stats Area */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.left-stat {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.right-stat {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 30px;
+}
+
+/*Descriptin Area */
+
+.desc-area {
+    display: grid;
+    grid-template-columns: 5rem  60rem auto;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "description name . subscribe"
+    ". summary . . "
+    ". show-more . . ";
+}
+
+
+.description {
+    grid-area: description;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.name {
+    grid-area: name;  
+}
+
+.subscribe {
+    grid-area: subscribe;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.summary {
+    grid-area: summary;
+}
+
+.show-more {
+    grid-area: show-more;
+}
+
+
+/* Comments Section */
+
+.comments-section {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 0.5rem;
+}
+.sortby {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.user-comments {
+    display: grid;
+    grid-template-columns: 5rem auto;
+    grid-template-areas: "account-comment-icon type-comment";
+}
+
+.account-comment-icon {
+    grid-area: account-comment-icon;
+}
+
+.public-comment {
+    grid-area: type-comment;
+}
+
+.user-detail {
+    display: flex;
+}
+
+.comments-list {
+    display: flex;
+}
+
+
+/* Side Header Area */
+
+.side-header {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.related-videos {
+    display: flex;
+    align-self: flex-start;
+    justify-content: flex-start;
+}
+
+
+/* Utilities */
+
+img {
+    width: 30px;
+}
+
+#youtube-logo {
+    width: 100px;
+}
+
+
+.user-account {
+    width: 50px;
+    border-radius: 30px;
+}
+
+#search-box {
+    width: 90%;
+    border: none;
+    box-shadow: none;
+    color: inherit;
+    font-family: 'Roboto','Noto',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: 4px;
+    max-width: 100%
+
+}
+
+
+.stat-icons {
+    width: 20px;
+    height: 20px;
+}
+
+
+button {
+    background-color: #c00;
+    color: white;
+    padding: 0 1.2rem;
+    border: none;
+    border-radius: 2px;
+}
+
+#comment-box {
+    width: 100%;
+    height: 30%;
+    border-color: #555;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#dislike-btn {
+    width: 20px;
+}
+
+
+.thumbnail {
+    width: 168px;
+    height: 94px;
+}
+
+.thumbnail-history {
+    display: flex;
+}
+
+.thumbnail-title {
+    font-weight: bolder;
+}
+
+.thumbnail-user, .thumbnail-history {
+    font-weight: lighter;
+    font-size: small;
+    
+}
+
+.thumbnail-history {
+    margin: 0;
+}
+
+#comment-box {
+    background-color: rgb(248, 242, 242);
+    bottom: 50px;
+    width: 93%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: lighter;
+}
